@@ -1,29 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Data.Common;
-using Microsoft.VisualBasic;
-using Test;
 
+using System.Reflection.Emit;
+using practice_1;
 
-
-namespace Test
+namespace practice_1
 {
-    class Class_Test
+    class CompteClass
     {
         int Id { get; set;}
-        string name = "class";
+        decimal Solde { get; set;} 
+    }
+    class ProgramForCompteClass
+    {
+        
     }
 
-    struct Struct_Test
+    record CompteRecord
     {
-        private int Id = 2;
-        private string name = "struct";
-        public Struct_Test() {}
+        int Id;
+        decimal Solde;
     }
-
-    record Record_Test
+    class ProgramForCompteRecord
     {
-        int Id = 3;
-        string name = "record"; 
-    };
-
+        
+    }
 }
+// https://learn.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/what-you-can-build
