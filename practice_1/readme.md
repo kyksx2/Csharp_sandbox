@@ -15,7 +15,7 @@
    - Instancie `c1` (`CompteClass`) avec `Id = 1` et `Solde = 100m`.
    - Instancie `r1` (`CompteRecord`) avec `Id = 1` et `Solde = 100m`.
    - Crée une variable `c2 = c1`, modifie `c2.Solde = 200m`, puis affiche `c1.Solde`. Observe le résultat.
-   - Crée une variable `r2 = r1 with { Solde = 200m }`, puis affiche `r1.Solde` et `r2.Solde`. Constate l'absence de modification sur `r1`.
+   - Crée une variable `r2 = r1 with { Solde = 200m }`, puis affiche `r1.Solde` et `r2.Solde`.
 
 3. **Opérateur de coalescence des nuls :**
    - Déclare une variable `string? email = null;`.
