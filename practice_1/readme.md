@@ -28,3 +28,21 @@
      - `500` -> `"Erreur serveur"`
      - Tout autre code (`_`) -> `"Code inconnu"`
    - Teste la fonction avec plusieurs valeurs.ypes, references et nullabilité**
+
+-----------------------------------------------------------------------------------
+notes perso --> differenes entre class et record:
+les classes sont penser penser pour definir un objet changeant, on peut changer et faire evoluer des donnes, 2 objets avec les memes donnees ne sont pas identiques
+- exemple:
+- var classe1 = new PersonneClass { Nom = "Alice" };
+- var classe2 = new PersonneClass { Nom = "Alice" };
+- Console.WriteLine(classe1 == classe2); --> Faux
+
+Au contraire, un record creer des instances imuables conceptualiser pour encapsuler des donnees, si les donnees sont identiques, un record sera egale a un autre
+- exemple:
+- var record1 = new PersonneRecord("Alice");
+- var record2 = new PersonneRecord("Alice");
+- Console.WriteLine(record1 == record2); --> Vrai
+
+exemple concret avec dark souls 2:
+- classe = un personnage, il a des stats et un inventaire qui peuvent changer
+- record = les gemmes de vie ou couteau de lancer, ils peuvent s'entasser dans l'inventaire et ne change pas
